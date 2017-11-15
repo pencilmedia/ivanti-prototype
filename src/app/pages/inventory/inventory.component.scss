@@ -1,0 +1,210 @@
+/* BEGIN: inventory-view.scss
+// -----------------------------------------------------*/
+@import "~assets/styles/uno-ux-scss/components-includes";
+
+.ux-layout--inventory {
+    .ux-layout--inventory-content {
+        .ux-inventory__tile-devices {
+            padding: $spacing-1 24px;
+            .ux-card {
+                margin: $spacing-1;
+            }
+        }
+        .ux-inventory__list-devices {
+            width: auto;
+            margin: $spacing-2;
+            border: 1px solid $border-color;
+            .ux-inventory__list {
+                padding: 0;
+            }
+        }
+    }
+    .ux-list__filter {
+        .ux-list__filter-item {
+            border-bottom: 1px solid $border-color;
+            .ux-list-item__icon {
+                padding: 0;
+            }
+            .fa {
+                font-size: 24px; // color: tint($hex-static-900, 60%);
+                color: $static-500;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+            &:hover {
+                @include list-hover('dark'); // light or dark hover
+                .fa {
+                    color: $dark-contrast;
+                }
+            }
+            &.ux-list__filter-item--selected {
+                cursor: default;
+                color: $dark-contrast;
+                background: $static-400;
+                position: relative;
+                .fa {
+                    color: $dark-contrast;
+                }
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 8px;
+                    height: 100%;
+                    content: '';
+                    background-color: $static-500;
+                }
+            }
+        }
+    } 
+    // Inventory Filter Panel
+    .ux-layout--inventory-drawer {
+        width: 300px;
+        border-right: 1px solid $border-color;
+        .ux-filter-title {
+            @extend .ux-body-2;
+            line-height: $app-bar-height;
+            width: 100%;
+            padding-left: $spacing-2;
+        }
+        .ux-navigation-filter {
+            height: 100%;
+            padding: 0;
+            .ux-layout__drawer-list {
+                .ux-subheader {
+                    padding: 0 0 $spacing-1 $spacing-2;
+                }
+                .ux-list__item {
+                    font-family: $ux_main_font;
+                    font-size: 12px;
+                    min-height: 24px;
+                    padding: 5px $spacing-2;
+                    .mdl-checkbox__label {
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
+        .ux-list-filter {
+            border-bottom: 1px solid $border-color;
+            .ux-list-filter__subtext {
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 18px;
+                display: block;
+                padding: 0;
+                @extend .text-muted;
+            }
+        }
+        .ux-layout__drawer-list {
+            height: 100%;
+            width: 100%;
+            .ux-layout__drawer--actions {
+                min-height: $app-bar-height;
+                box-shadow: $shadow--bottom;
+                padding-top: 4px;
+                padding-left: 4px;
+            }
+            .ux-layout__drawer--content {
+                overflow-y: auto;
+                .ux-list-filter {
+                    .ux-list-filter__control {
+                        float: left;
+                        height: 36px;
+                        width: $spacing-2;
+                        margin-right: $spacing-1;
+                        text-align: center;
+                    }
+                    .ux-truncate {
+                        max-width: 180px; //List item in drawer is not very wide
+                    }
+                }
+            }
+        }
+    } 
+}
+
+// Responsive Inventory Layout
+@media screen and (min-width: $screen-xxl) {
+    .ux-layout--inventory {
+        .ux-inventory-group {
+            padding-right: 25%;
+            padding-left: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-xxl) and (min-width: $screen-lg) {
+    .ux-layout--inventory {
+        .ux-inventory-group {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+    }
+}
+
+// Portrait tablet to Laptop - 768px to 1280
+@media screen and (max-width: $screen-lg) and (min-width: $screen-sm) {
+    .ux-layout--inventory {
+        .ux-inventory-group {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        .ux-inventory__tile-devices {
+            transition: all 0.5s ease-out;
+        }
+    }
+}
+
+// Landscape phone to Portrait tablet - 481px to 768px
+@media screen and (max-width: $screen-sm) and (min-width: $screen-xsm) {
+    .ux-layout--inventory {
+        .ux-inventory-group {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        .ux-inventory__tile-devices {
+            transition: all 0.5s ease-out;
+            padding: 10px 30px;
+            .ux-tile-container {
+                width: 50%;
+                .ux-card {
+                    width: 90%;
+                    min-width: 0;
+                    margin: $spacing-2;
+                }
+            }
+        }
+    }
+}
+
+// Portrait phone - < 480px
+@media screen and (max-width: $screen-xsm) {
+    .ux-layout--inventory {
+        .ux-inventory-group {
+            padding-right: 36px;
+            padding-left: 36px;
+        }
+        .ux-inventory__tile-devices {
+            transition: all 0.5s ease-out;
+            padding: 10px 40px;
+            .ux-tile-container {
+                width: 100%;
+                .ux-card {
+                    width: 100%;
+                    margin: $spacing-2 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen-md) {
+    .ux-layout--inventory {
+        .ux-layout__btn-filter {
+            display: none;
+        }
+    }
+}

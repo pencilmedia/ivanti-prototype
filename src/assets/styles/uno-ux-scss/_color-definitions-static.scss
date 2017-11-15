@@ -1,0 +1,40 @@
+/* BEGIN: STATIC _color-definitions.scss - FOR RGB
+// -----------------------------------------------------*/
+// RGB Definitions
+
+// Black & White
+$static-color-black: "0,0,0";
+$static-color-white: "255,255,255";
+
+// Static Color Palette
+$static-color:
+"0,0,0"
+"246,106,34"
+"284,156,34"
+"157,43,47"
+"6,127,162"
+"0,174,184"
+"4,149,72"
+"112,190,74"
+"80,40,117"
+"112,75,157"
+"168,31,100"
+"207,73,153";
+
+$static-color-900: 		nth($static-color, 1);
+$static-color-800: 		nth($static-color, 2);
+$static-color-700: 		nth($static-color, 3);
+$static-color-600: 		nth($static-color, 4);
+$static-color-500: 		nth($static-color, 5);
+$static-color-400: 		nth($static-color, 6);
+$static-color-300: 		nth($static-color, 7);
+$static-color-200: 		nth($static-color, 8);
+$static-color-100: 		nth($static-color, 9);
+$static-color-50:   	nth($static-color, 10);
+$static-color-A700: 	nth($static-color, 11);
+$static-color-A400: 	nth($static-color, 12);
+
+
+
+
+

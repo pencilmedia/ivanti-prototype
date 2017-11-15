@@ -1,0 +1,27 @@
+/* BEGIN: common.scss (global app styles)
+// -----------------------------------------------------*/
+
+@import "common-alerts";
+@import "common-buttons";
+@import "common-dialogs";
+@import "common-filters";
+@import "common-grid";
+@import "common-tabs";
+@import "common-tables";
+@import "common-toolbar";
+
+:host { //NOTE: Use host to override component css
+    .ux-logo {
+        height: 24px;
+    }
+    .material-icons {
+        font-size: $ux_icon_size;
+    }
+}
+
+.text--light-contrast {
+    color: $light-contrast;
+}
+.text--dark-contrast {
+    color: $dark-contrast;
+}
