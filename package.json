@@ -35,8 +35,6 @@
     "zone.js": "^0.8.14",
 
     "@angular/material": "github:angular/material2-builds",
-    "@angular2-mdl-ext/popover": "^0.6.0",
-    "@angular2-mdl-ext/select": "^0.10.3",
     "@material/layout-grid": "^0.4.4",
     "angular2-mdl": "^2.13.2"
   },
@@ -57,9 +55,6 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "typescript": "~2.4.2",
-
-    "css-loader": "^0.28.3",
-    "node-sass": "^4.5.3"
+    "typescript": "~2.4.2"
   }
 }
