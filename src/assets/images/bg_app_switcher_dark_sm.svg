@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="51px" viewBox="0 0 60 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Btn: App Switcher Dark Sm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-100.000000, -20.000000)">
+            <g id="Btn:-App-Switcher-Dark-Sm" transform="translate(100.000000, 20.000000)">
+                <rect id="Rectangle-2" fill="#F0B42C" x="0" y="0" width="60" height="50"></rect>
+                <polygon id="Rectangle-2-Copy" fill="#FFFFFF" opacity="0.149999991" points="57.455195 34.75 60 50.1331622 0 50.1331622"></polygon>
+                <polygon id="Rectangle-2-Copy-2" fill="#FFFFFF" opacity="0.280000001" points="54.2182061 11.8363617 57.6628258 34.7389417 46.4140752 37.6772935 30 24.7059655"></polygon>
+                <polygon id="Rectangle-2-Copy-3" fill="#FFFFFF" opacity="0.100000001" points="53.9639442 11.9978131 52.1180483 0 0 0 29.9679416 24.7083277"></polygon>
+                <polygon id="wedge-dark" fill="#000000" opacity="0.75" points="52 0 60 0 60 48.6111111"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+/* BEGIN: _ivanti-theme.scss
+// -----------------------------------------------------*/
+
+// How can I use mixins to output color variables to be used throughout css i.e. background: $theme-primary-color;
+// //////
+
+@mixin ux-theme($color-primary, $color-accent) {
+	// Define Color Variables
+	$theme-primary-color: $color-primary;
+	$theme-accent-color: $color-accent;
+
+	// @if $colorContrast {
+	// 	opacity: 0.87;
+	// }
+}
+
+@include ux-theme($primary-800, $primary-A100);
+
+$border-color-nav: $primary-900;
+
+.ivanti-theme {
+	/* BEGIN: Navigation */
+	.ux-layout__header {
+		background: $static-white;
+	    color: lighten($hex-static-900, 30%);
+	}
+	.ux-layout__drawer {
+        background: linear-gradient(-25deg, $primary-800 80%, $primary-700);
+	    border-right-color: $border-color-nav;
+	    outline: 1px solid $static-white;
+	    > .ux-layout-title {
+	        // background: $primary-800;
+	        .ux-headline, .ux-caption {
+	            color: $dark-contrast;
+	        }
+	        .ux-button--icon {
+	            color: $dark-contrast;
+	        }
+	    }
+	    .ux-navigation-content, .ux-navigation__footer {
+	        .ux-textfield__input {
+	            color: $dark-contrast;
+	        }
+	        .ux-navigation-items {
+		        .ux-navigation__item {
+		            color: $dark-contrast;
+		            &:hover {
+				        // background: linear-gradient(90deg, $primary-900 65%, $primary-800);
+				        background: $primary-900;
+		            }
+		        }
+		    }
+	    }
+	    .ux-navigation-content {
+	        .ux-navigation {
+	            hr {
+	                border-top-color: $border-color-nav;
+	            }
+	        }
+	    }
+	    .ux-navigation__footer {
+
+	    }
+	}
+}

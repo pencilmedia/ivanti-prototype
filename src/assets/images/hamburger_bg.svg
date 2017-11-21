@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" preserveAspectRatio="none" height="60">
+    <defs>
+        <style>
+            .bkg-1{fill:rgba(240,180,44,.8);}
+            .bkg-2{fill:rgba(240,180,44,.7);}
+            .bkg-3{fill:rgba(240,180,44,.6);}
+            .bkg-4{fill:rgba(240,180,44,.5);}
+        </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <polygon class="bkg-1" points="60 60 0 60 0 0 50 0 60 60"/>
+        <polygon class="bkg-2" points="0 60 0 0 50 0 0 60"/>
+        <polygon class="bkg-3" points="60 60 0 60 0 0 60 60"/>
+        <polygon class="bkg-4" points="60 60 0 60 56 36 60 60"/>
+    </g>
+</svg>

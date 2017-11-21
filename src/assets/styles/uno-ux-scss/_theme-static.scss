@@ -1,0 +1,9 @@
+/* BEGIN: _static-theme.scss
+// -----------------------------------------------------*/
+// Variables mapped to simple variable names
+
+// Static Color Definitions/Theme
+@import 'palette-static';
+
+// Import Static Theme and Global Styles
+@import 'all';

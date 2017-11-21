@@ -1,0 +1,143 @@
+/* BEGIN: md-palette.scss
+// -----------------------------------------------------*/
+$black-87-opacity: rgba(black, 0.87);
+$white-87-opacity: rgba(white, 0.87);
+
+// BEGIN: Primary Colors
+$ivanti-color-primary: (
+  50: #ebebeb,
+  100: #d6d6d6,
+  200: #c2c2c2,
+  300: #adadad,
+  400: #999999,
+  500: #787878,
+  600: #636363,
+  700: #474747,
+  800: #2b2b2b,
+  900: #000000,
+  A100: #f0a9a4,
+  A200: #e97f77,
+  A400: #e56a61,
+  A700: #da291c,
+
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: black,
+  )
+);
+
+$ivanti-color-secondary: (
+  50: #ededed,
+  100: #d3d1d3,
+  200: #b6b3b6,
+  300: #989599,
+  400: #827e83,
+  500: #6c676d,
+  600: #645f65,
+  700: #59545a,
+  800: #4f4a50,
+  900: #3d393e,
+  A100: #e69ef8,
+  A200: #d96ff4,
+  A400: #d630ff,
+  A700: #d117ff,
+
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: black,
+  )
+);
+
+
+// END: Primary Colors
+// BEGIN: Accent Colors
+
+$ivanti-color-accent: (
+  50: #ecf5f6,
+  100: #d9eaed,
+  200: #c6dfe5,
+  300: #a9cfd7,
+  400: #8cbfca,
+  500: #70afbd,
+  600: #539fb0,
+  700: #4094a7,
+  800: #378597,
+  900: #2e7788,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white
+  )
+);
+
+// END: Accent Colors
+// BEGIN: Status Colors
+
+$ivanti-color-warn: (
+  50: #ffe9e4,
+  100: #ffc8bc,
+  200: #ffa38f,
+  300: #ff7e62,
+  400: #ff6240,
+  500: #ff461e,
+  600: #ff3f1a,
+  700: #ff3716,
+  800: #ff2f12,
+  900: #ff200a,
+  A100: #ffffff,
+  A200: #fff5f5,
+  A400: #ffc6c2,
+  A700: #ffaea8,
+
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: black,
+  )
+);
+
+
+
+

@@ -1,0 +1,28 @@
+
+<!-- BEGIN: CARD COMPONENT -->
+<md-card class="ux-card">
+    <md-card-header>
+        <md-card-title>
+            <h2 mdl-card-title-text class="ux-subheader">D01708</h2></md-card-title>
+    </md-card-header>
+    <md-card-content class="ux-card-content">
+        <div class="ux-flexbox">
+            <div class="ux-card-timeframe">
+                <span class="text-muted">Last Seen</span>
+                <h1 class="display-1">5</h1><span>Days Ago</span>
+            </div>
+            <div class="ux-flex">
+                <dl class="ux-card-device-list">
+                    <dd><i class="material-icons">phone_iphone</i> iPhone</dd>
+                    <dd><i class="material-icons">spa</i> iOS</dd>
+                    <dd><i class="material-icons">supervisor_account</i> Xavier Patcher</dd>
+                </dl>
+            </div>
+        </div>
+    </md-card-content>
+    <md-card-actions class="ux-card-actions">
+        <button md-button color="accent" class="ux-button">Scan Now</button>
+        <button md-icon-button color="accent" class="ux-button-icon ux-button__flip" (click)="flipElem = !flipElem;"><i class="material-icons">flip_to_back</i></button>
+    </md-card-actions>
+</md-card>
+<!-- END: CARD COMPONENT -->

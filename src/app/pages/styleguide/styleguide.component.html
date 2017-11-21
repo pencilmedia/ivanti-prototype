@@ -1,0 +1,61 @@
+<h3 class="ux-headline">Pages: Icons &amp; Components</h3>
+<div class="page-content">
+	<mat-tab-group [selectedIndex]="0">
+		<mat-tab label="Color Palette">
+			<!-- // Color Scheme -->
+			<h2 class="ux-headline">Uno Static Color Scheme</h2>
+			<div class="mdc-layout-grid ux-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell">
+						<h1 class="ux-title">Primary Color</h1>
+						<div class="palette-swatch primary-900">primary-900</div>
+						<div class="palette-swatch primary-800">primary-800</div>
+						<div class="palette-swatch primary-700">primary-700</div>
+						<div class="palette-swatch primary-600">primary-600</div>
+						<div class="palette-swatch primary-500">primary-500</div>
+						<div class="palette-swatch primary-400">primary-400</div>
+						<div class="palette-swatch primary-300">primary-300</div>
+						<div class="palette-swatch primary-200">primary-200</div>
+						<div class="palette-swatch primary-100">primary-100</div>
+						<div class="palette-swatch primary-50">primary-50</div>
+					</div>
+					<div class="mdc-layout-grid__cell">
+							<h1 class="ux-title">Accent Color</h1>
+							<div class="palette-swatch accent-500">accent-500</div>
+							<div class="palette-swatch accent-400">accent-400</div>
+							<div class="palette-swatch accent-300">accent-300</div>
+							<div class="palette-swatch accent-200">accent-200</div>
+							<p><em>NOTE:</em> Accent colors begin 500 and end 200;<br> not using 900-50</p>
+						</div>
+					<div class="mdc-layout-grid__cell">
+						<h1 class="ux-title">Status Color</h1>
+						<div class="palette-swatch status-high">status-high</div>
+						<div class="palette-swatch status-medium">status-medium</div>
+						<div class="palette-swatch status-low">status-low</div>
+					</div>
+				</div>
+			</div>
+			<!-- // Buttons -->
+			<h2 class="ux-headline">Uno Buttons</h2>
+			<div class="mdc-layout-grid ux-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell">		
+						<p>
+							<button mat-button class="ux-button">Default Button</button>
+							<button mat-raised-button class="ux-button--raised">Raised Button</button>
+							<button mat-icon-button class="ux-button--icon"><mat-icon>search</mat-icon></button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</mat-tab>
+		<mat-tab label="Components">
+			<h3>Uno Buttons</h3>
+			<p>
+				<button mat-button class="ux-button">Default Button</button>
+				<button mat-raised-button class="ux-button--raised">Raised Button</button>
+				<button mat-icon-button class="ux-button--icon"><mat-icon>search</mat-icon></button>
+			</p>
+		</mat-tab>
+	</mat-tab-group>
+</div>
