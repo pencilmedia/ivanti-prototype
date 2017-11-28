@@ -1,0 +1,30 @@
+/* BEGIN: themes.scss
+// Defines color definitions for each framework and set up theming
+// -----------------------------------------------------*/
+
+/* 1. MD Theming */
+/* /////////////// */
+@import 'theme/theme-md';
+
+/* 2. Custom Theming - Shared between MDL and Ivanti */
+/* /////////////// */
+@import 'theme/palette-ivanti';
+
+/* 3. MDL Theming */
+/* /////////////// */
+$color-primary: $ivanti-primary-500;
+$color-primary-dark: $ivanti-primary-800;
+$color-accent: $ivanti-accent-500;
+// @import '~angular2-mdl/scss/material-design-lite';
+@import 'variables-mdl';
+// @import "grid-mdl";
+
+/* 4. Static Theming */
+/* /////////////// */
+@import 'theme/theme-static';
+
+/* 5. Custom Theming */
+/* /////////////// */
+@import 'theme/theme-ivanti';
+
+

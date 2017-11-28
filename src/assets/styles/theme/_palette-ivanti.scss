@@ -1,23 +1,67 @@
 /* BEGIN: _ivanti-palette.scss
 // -----------------------------------------------------*/
-// NOTE: RGB and HEX values - RGB color definitions in _color-definitions.scss
-// HEX Color Palette after RGB color palette below
+// RGB and Hex follows
 
-// mdl-theme and ivanti-theme both share these colors defined in _color-definitions.scss
-@import 'color-definitions-ivanti';
+/* BEGIN: RGB Color Definition         */
+/* ----------------------------------- */
+// Primary RGB Values
+$ivanti-primary:
+"242,242,242"
+"229,229,229"
+"217,217,217"
+"191,191,191"
+"166,166,166"
+"127,127,127"
+"102,102,102"
+"77,77,77"
+"38,38,38"
+"0,0,0"
+"218,41,28"
+"229,106,97"
+"233,127,119"
+"240,169,164";
+$ivanti-primary-50: nth($ivanti-primary, 1);
+$ivanti-primary-100: nth($ivanti-primary, 2);
+$ivanti-primary-200: nth($ivanti-primary, 3);
+$ivanti-primary-300: nth($ivanti-primary, 4);
+$ivanti-primary-400: nth($ivanti-primary, 5);
+$ivanti-primary-500: nth($ivanti-primary, 6);
+$ivanti-primary-600: nth($ivanti-primary, 7);
+$ivanti-primary-700: nth($ivanti-primary, 8);
+$ivanti-primary-800: nth($ivanti-primary, 9);
+$ivanti-primary-900: nth($ivanti-primary, 10);
+$ivanti-primary-A100: nth($ivanti-primary, 11);
+$ivanti-primary-A200: nth($ivanti-primary, 12);
+$ivanti-primary-A400: nth($ivanti-primary, 13);
+$ivanti-primary-A700: nth($ivanti-primary, 14);
 
-// RGB COLOR PALETTE
-// /////////////////////////////////////
+// Accent RGB Values
+$ivanti-accent:
+"231,242,246"
+"191,224,233"
+"0,127,162"
+"0,115,146";
+$ivanti-accent-200: nth($ivanti-accent, 1);
+$ivanti-accent-300: nth($ivanti-accent, 2);
+$ivanti-accent-400: nth($ivanti-accent, 3);
+$ivanti-accent-500: nth($ivanti-accent, 4);
 
-// Black & White
-$white: unquote("rgb(#{$ivanti-white})")   !default;
-$black: unquote("rgb(#{$ivanti-black})") !default;
+// Status RGB Values
+$ivanti-status:
+"0,135,77"
+"249,211,26"
+"214,0,0";
+$ivanti-status-low: nth($ivanti-status, 1);
+$ivanti-status-medium: nth($ivanti-status, 2);
+$ivanti-status-high: nth($ivanti-status, 3);
 
-// Contrast
-$light-contrast: unquote("rgba(#{$ivanti-light-contrast},.9)")   !default;
-$dark-contrast: unquote("rgba(#{$ivanti-dark-contrast},.9)")   !default;
+/* END: RGB Color Definition         */
+/* --------------------------------- */
 
-// Primary Color
+/* BEGIN: RGB Color Variable Mapping */
+// NOTE: Map RGBs to variables
+/* --------------------------------- */
+// Primary Color Variables
 $primary-50: unquote("rgb(#{$ivanti-primary-50})")   !default;
 $primary-100: unquote("rgb(#{$ivanti-primary-100})") !default;
 $primary-200: unquote("rgb(#{$ivanti-primary-200})") !default;
@@ -33,39 +77,21 @@ $primary-A200: unquote("rgb(#{$ivanti-primary-A200})") !default;
 $primary-A700: unquote("rgb(#{$ivanti-primary-A400})") !default;
 $primary-A900: unquote("rgb(#{$ivanti-primary-A700})") !default;
 
-// Accent Color
+// Accent Color Variables
 $accent-200: unquote("rgb(#{$ivanti-accent-200})") !default;
 $accent-300: unquote("rgb(#{$ivanti-accent-300})") !default;
 $accent-400: unquote("rgb(#{$ivanti-accent-400})") !default;
 $accent-500: unquote("rgb(#{$ivanti-accent-500})") !default;
 
-// RGB Status colors
+// RGB Status Color Variables
 // ///// 
 $status-low: unquote("rgb(#{$ivanti-status-low})")   !default;
 $status-medium: unquote("rgb(#{$ivanti-status-medium})") !default;
 $status-high: unquote("rgb(#{$ivanti-status-high})") !default;
 
 
-// Secondary Color - NOT USED
-$secondary-50: unquote("rgb(#{$ivanti-secondary-50})")   !default;
-$secondary-100: unquote("rgb(#{$ivanti-secondary-100})") !default;
-$secondary-200: unquote("rgb(#{$ivanti-secondary-200})") !default;
-$secondary-300: unquote("rgb(#{$ivanti-secondary-300})") !default;
-$secondary-400: unquote("rgb(#{$ivanti-secondary-400})") !default;
-$secondary-500: unquote("rgb(#{$ivanti-secondary-500})") !default;
-$secondary-600: unquote("rgb(#{$ivanti-secondary-600})") !default;
-$secondary-700: unquote("rgb(#{$ivanti-secondary-700})") !default;
-$secondary-800: unquote("rgb(#{$ivanti-secondary-800})") !default;
-$secondary-900: unquote("rgb(#{$ivanti-secondary-900})") !default;
-$secondary-A100: unquote("rgb(#{$ivanti-secondary-A100})") !default;
-$secondary-A200: unquote("rgb(#{$ivanti-secondary-A200})") !default;
-$secondary-A700: unquote("rgb(#{$ivanti-secondary-A400})") !default;
-$secondary-A900: unquote("rgb(#{$ivanti-secondary-A700})") !default;
-
-
-// HEX COLOR PALETTE
-// /////////////////////////////////////
-
+/* BEGIN: HEX           */
+/* -------------------- */
 // Primary Color
 $hex-primary-50: #f2f2f2;
 $hex-primary-100: #e5e5e5;
@@ -101,26 +127,3 @@ $hex-status-low: #00874d;
 $hex-status-medium: #f9d319;
 // High
 $hex-status-high: #d50000;
-
-
-// Secondary Color - NOT USED
-$hex-secondary-50: #009AF5;
-$hex-secondary-100: #0084E3;
-$hex-secondary-200: #006DCD;
-$hex-secondary-300: #0060B3;
-$hex-secondary-400: #0058A6;
-$hex-secondary-500: #004E94;
-$hex-secondary-600: #004583;
-$hex-secondary-700: #00396B;
-$hex-secondary-800: #002D54;
-$hex-secondary-900: #00243F;
-$hex-secondary-A100: #D9EAED;
-$hex-secondary-A200: #A8CFD7;
-$hex-secondary-A400: #8BBFCA;
-$hex-secondary-A700: #3E95A7;
-
-
-
-
-
-

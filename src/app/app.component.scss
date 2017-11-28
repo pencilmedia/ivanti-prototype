@@ -1,9 +1,17 @@
 /* BEGIN: app.component.scss
-// Defines color definitions for each framework and set up theming
 // -----------------------------------------------------*/
 
-/* 1. MD Theming */
-/* /////////////// */
-// @import 'theme-md';
+/* Web Fonts */
+/* ////////////////// */
+@import "~assets/styles/web-fonts/_web-fonts";
 
+/* Custom Color Palette */
+/* ////////////////// */
+@import "~assets/styles/themes";
 
+.app {
+    padding: 20px;
+    h3 {
+        color: $accent-400;
+    }
+}

@@ -132,16 +132,9 @@ a.text-danger:hover {
 .bg-status-high, .bg-error {
     background: $status-high;
 }
-// Color Backgrounds
-.bg-primary {
-    background: $primary-500;
-}
-.bg-secondary {
-    background: $secondary-500;
-}
-.bg-accent {
-    background: $accent-500;
-}
+
+
+
 abbr[title] {
     border-bottom: 1px dotted;
 }

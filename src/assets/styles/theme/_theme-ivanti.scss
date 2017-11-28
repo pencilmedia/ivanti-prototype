@@ -1,26 +1,6 @@
 /* BEGIN: _ivanti-theme.scss
 // -----------------------------------------------------*/
 
-// How can I use mixins to output color variables to be used throughout css i.e. background: $theme-primary-color;
-// //////
-
-@import 'palette-ivanti';
-
-
-@mixin ux-theme($color-primary, $color-accent) {
-	// Define Color Variables
-	$theme-primary-color: $color-primary;
-	$theme-accent-color: $color-accent;
-
-	// @if $colorContrast {
-	// 	opacity: 0.87;
-	// }
-}
-
-@include ux-theme($primary-800, $primary-A100);
-
-$border-color-nav: $primary-900;
-
 .ivanti-theme {
 	/* BEGIN: Navigation */
 	.ux-layout__header {
@@ -29,7 +9,7 @@ $border-color-nav: $primary-900;
 	}
 	.ux-layout__drawer {
         background: linear-gradient(-25deg, $primary-800 80%, $primary-700);
-	    border-right-color: $border-color-nav;
+	    border-right-color: $primary-900;
 	    outline: 1px solid $static-white;
 	    > .ux-layout-title {
 	        // background: $primary-800;
@@ -57,7 +37,7 @@ $border-color-nav: $primary-900;
 	    .ux-navigation-content {
 	        .ux-navigation {
 	            hr {
-	                border-top-color: $border-color-nav;
+	                border-top-color: $primary-900;
 	            }
 	        }
 	    }

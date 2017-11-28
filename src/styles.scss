@@ -5,9 +5,13 @@
 /* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
 
 /* Web Fonts */
-/* ****************** */
+/* ////////////////// */
 @import "~assets/styles/web-fonts/_web-fonts";
 
-/* MD, MDL and Custom Color Palette Theming */
-/* ****************** */
-@import "~assets/styles/_themes";
+/* Custom Color Palette */
+/* ////////////////// */
+@import "~assets/styles/themes";
+
+/* Global Styles */
+/* ////////////////// */
+@import '~assets/styles/all';
