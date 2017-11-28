@@ -1,0 +1,28 @@
+/* BEGIN: layout.scss
+// -----------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+// Layout - Flex with sidenav
+.ux-sidenav-container {
+    height: 100%;
+    .mat-drawer-content { /* WARNING: this class has changed several times by Google MD: it breaks the pinned toolbar if it changes */
+        @extend .ux-flexbox;
+        @extend .ux-flexbox.flex-column;
+        .ux-layout__header {
+            position: relative;
+            z-index: 999999;
+        }
+        .ux-layout__content {
+            overflow: auto;
+            flex: 1;
+        }
+    }
+}
+

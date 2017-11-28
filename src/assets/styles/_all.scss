@@ -1,0 +1,23 @@
+/* BEGIN: all.scss
+// -----------------------------------------------------*/
+
+// Global Includes
+@import "variables";
+@import "mixins";
+
+// MDC Grid - MDC Component - Change to CDL grid
+// @import "~@material/layout-grid/dist/mdc.layout-grid.min.css";
+
+// Typography
+@import "typography";
+
+// Animation
+@import "animation";
+
+// Global/Common
+@import "utility";
+@import "common";
+
+// Page Layout
+@import "layout";
+@import "navigation";
