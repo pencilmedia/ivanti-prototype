@@ -13,7 +13,7 @@
 $ivanti-primary: mat-palette($ivanti-color-primary, 500);
 $ivanti-accent:  mat-palette($ivanti-color-accent, 500); // mat-palette($default-accent, A700); "A700 will choose the other accent color"
 // // // The warn palette is optional (defaults to red).
-$ivanti-warn:    mat-palette($ivanti-color-warn);
+$ivanti-warn:    mat-palette($ivanti-color-warn, 500);
 // // // Create the theme object (a Sass map containing all of the palettes).
 $ivanti-theme: mat-light-theme($ivanti-primary, $ivanti-accent, $ivanti-warn);
 // Include theme styles for core and each component used in your app.

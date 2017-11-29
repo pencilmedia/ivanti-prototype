@@ -9,9 +9,12 @@
 /* ////////////////// */
 @import "~assets/styles/themes";
 
-.app {
+.ux-prototype {
     padding: 20px;
+    h2, h3 {
+        margin: 20px 0 10px 0;
+    }
     h3 {
-        color: $accent-400;
+        color: $primary-500;
     }
 }

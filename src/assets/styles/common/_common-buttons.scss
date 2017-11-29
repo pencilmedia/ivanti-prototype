@@ -1,36 +1,61 @@
 /* BEGIN: buttons.scss
 // -----------------------------------------------------*/
+// NOTE: For Global Button Styles:
+// Had to add "encapsulation: ViewEncapsulation.None" in app.component.ts
 
-.ux-button, .mat-button {
+// Common Base Button Styles
+.ux-button {
     font-family: $ux-main-font;
-    color: $static-500 !important;
     text-transform: uppercase;
-    line-height: 36px;
     transition: .25s;
-    &:hover {
-        background: $static-500;
-        color: $dark-contrast !important;
+}
+.mat-icon {
+    &.md-18 {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
     }
 }
-.ux-button--raised, .mat-button--raised {
-    @extend .ux-button;
-    color: $dark-contrast !important;
-    background: $accent-500;
-    &:hover {
-        background: $accent-400;
-        color: $dark-contrast;
+
+// Basic Buttons
+.mat-button {
+    &.ux-button {
+        @extend .ux-button;
+        line-height: 36px;
     }
 }
-.ux-button--icon, .mat-icon-button {
-    color: $static-500 !important;
-    &:hover {
-        background: rgba(0,127,162,.1);
+
+// Raised Buttons
+.mat-raised-button {
+    &.ux-raised-button {
+        @extend .ux-button;
+        line-height: 36px;
     }
 }
-.mdl-navigation__icon--active {
-    @extend .ux-button:hover;
-    &:hover {
-        cursor: default;
-        @extend .ux-button:hover;
+
+// Icon Buttons
+.mat-icon-button {
+    &.ux-icon-button {
+        @extend .ux-button;
+        &:hover {
+            background: $accent-200;
+            &[disabled] {
+                background: none; // No BG for disabled button
+            }
+        }
+    }
+}
+
+// FAB Buttons
+.mat-fab {
+    &.ux-fab {
+        @extend .mat-button.ux-button;
+    }
+}
+
+// Mini FAB Buttons
+.mat-mini-fab {
+    &.ux-mini-fab {
+        @extend .mat-button.ux-button;
     }
 }
