@@ -11,5 +11,5 @@ import { Component } from '@angular/core';
 
 // Component class
 export class protoHome {
-  title = 'Ivanti Prototype';
+  title = 'Home';
 }

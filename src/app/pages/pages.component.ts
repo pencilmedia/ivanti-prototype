@@ -10,4 +10,6 @@ import { Component } from '@angular/core';
 })
 
 // Component class
-export class protoPages {}
+export class protoPages {
+  title = 'Pages';
+}

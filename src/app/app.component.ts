@@ -1,5 +1,6 @@
 // import { Component } from '@angular/core';
 import { Component, ViewEncapsulation } from '@angular/core'; //To enable encapsulation changes
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',

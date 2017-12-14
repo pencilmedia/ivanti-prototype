@@ -13,6 +13,8 @@ import 'hammerjs';
 // Pages
 import { protoHome } from './pages/home/home.component';
 import { protoStyleguide } from './pages/styleguide/styleguide.component';
+import { protoPages } from './pages/pages.component';
+import { protoScratchsheet } from './pages/scratchsheet/scratchsheet.component';
 
 // Routing
 import { routing } from './app.routes';
@@ -40,9 +42,11 @@ import { routing } from './app.routes';
   declarations: [
     AppComponent,
 
-      // Routes (Pages)
-      protoHome,
-      protoStyleguide
+    // Routes (Pages)
+    protoHome,
+    protoStyleguide,
+    protoPages,
+    protoScratchsheet
 
   ],
   providers: [],

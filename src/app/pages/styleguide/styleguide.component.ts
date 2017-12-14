@@ -10,4 +10,6 @@ import { Component } from '@angular/core';
 })
 
 // Component class
-export class protoStyleguide {}
+export class protoStyleguide {
+  title = 'Styleguide';
+}
