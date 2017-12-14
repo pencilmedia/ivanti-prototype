@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Include MD animations
@@ -10,10 +10,14 @@ import { MatIconModule, MatSidenavModule, MatToolbarModule, MatTabsModule, MatSe
 // Include gesture support
 import 'hammerjs';
 
+// Pages
+import { protoHome } from './pages/home/home.component';
+import { protoStyleguide } from './pages/styleguide/styleguide.component';
+
+// Routing
+import { routing } from './app.routes';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -30,6 +34,16 @@ import 'hammerjs';
     MatListModule, 
     MatGridListModule, 
     MatCardModule,
+    // Routing
+    routing
+  ],
+  declarations: [
+    AppComponent,
+
+      // Routes (Pages)
+      protoHome,
+      protoStyleguide
+
   ],
   providers: [],
   bootstrap: [AppComponent]

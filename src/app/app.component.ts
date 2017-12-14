@@ -10,5 +10,5 @@ import { Component, ViewEncapsulation } from '@angular/core'; //To enable encaps
   // encapsulation: ViewEncapsulation.Native
 })
 export class AppComponent {
-  title = 'Ivanti Prototyping';
+  // variables
 }

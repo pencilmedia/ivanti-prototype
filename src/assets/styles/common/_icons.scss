@@ -3,29 +3,24 @@
 // NOTE: Mixin to overwrite MD icon size with classNames
 
 // Mixin - Default is 24px
-@mixin md-icon-size($size: 24px) {
+@mixin md-icon-size($size: 16px) {
     font-size: $size;
     height: $size;
     width: $size;
 }
 
 .mat-icon {
+    @include md-icon-size(16px);
     &.md-12 {
         @include md-icon-size(12px);
-    }
-    &.md-14 {
-        @include md-icon-size(14px);
     }
     &.md-16 {
         @include md-icon-size(16px);
     }
-    &.md-18 {
-        @include md-icon-size(18px);
-    }
     &.md-20 {
         @include md-icon-size(20px);
     }
-    &.md-22 {
-        @include md-icon-size(22px);
+    &.md-24 {
+        @include md-icon-size(24px);
     }
 }

@@ -1,0 +1,190 @@
+<div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+                    	Tile
+
+                    <!--     <uno-tile-view
+                            [tileData] = this.deviceCards[(jj%7)]
+                            [tileIndex]= jj>
+                        </uno-tile-view> -->
+
+						<div class="inv-card" [ngClass]="{'': isClass1Visible, 'animated flipInY': isClass2Visible}">
+							<div class="inv-card--flip">
+								<mdl-card class="mdl-card__head mdl-shadow--2dp">
+						            <mdl-card-title class="mdl-card__title">
+						                <span class="md-title">
+						                    <span id="inv-card{{tileIndex}}-title">Title</span>
+						                </span>
+						                 <span>
+							                <mdl-card-menu>
+							                    <mdl-checkbox id="inv-card{{tileIndex}}-checkbox" [mdl-ripple]="true"
+							                    (click)="clickAction($event, tileData?.topCheckbox?.clickData, 
+							                        tileData.topCheckbox.isChecked)" class="inv-card__checkbox">
+							                    </mdl-checkbox>
+							                </mdl-card-menu>
+							            </span>   
+						            </mdl-card-title>
+						            <div class="ux-icon-set"><div class="mdl-card__first__icon"><i class="material-icons">tablet_android</i></div><div class="mdl-card__second__icon"><i class="fa fa-android "></i></div></div>
+						            <mdl-card-supporting-text class="mdl-card__supporting-text"><div class="inv-card__inner__center"><span class="ux-display-2 inv-card-left__text">5</span>  <span class="inv-card-right__text"><strong class="ux-title">Days Ago</strong><em class="ux-caemtion">last seen</em>  </span></div>              </mdl-card-supporting-text>
+						            <mdl-card-actions mdl-card-border="" class="mdl-card__actions mdl-card--border"><!--bindings={
+										  "ng-reflect-ng-if": "true"
+										}--><span><!--bindings={
+										  "ng-reflect-ng-for-of": "[object Object]"
+										}--><span><button mdl-button="" mdl-colored="" mdl-ripple="" ng-reflect-mdl-colored-type="" ng-reflect-ripple-active="" class="mdl-button">LINK<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>                   </span></span><!--bindings={
+										  "ng-reflect-ng-if": "false"
+										}--><div class="inv-card__button--flip inv-card__head--fold" id="inv-card-flip-front0"><!--bindings={
+										  "ng-reflect-ng-if": "true"
+										}-->
+<div class="inv-card--fold__legend" (click)="isClass2Visible = !isClass2Visible;"><i class="material-icons">flip_to_back</i></div><!--bindings={
+										  "ng-reflect-ng-if": "false"
+										}--></div>
+									</mdl-card-actions>
+						        </mdl-card>
+
+NOTE: THIS IS THE BACKSIDE OF CARD
+<mdl-card class="mdl-card__tail mdl-shadow--2dp mdl-card"><mdl-card-title class="mdl-card__back__title mdl-card__title"><span class="md-title">D01708</span></mdl-card-title><!--bindings={
+"ng-reflect-ng-if": "[object Object]"
+}--><span><mdl-card-menu class="mdl-card__menu"><mdl-checkbox class="inv-card__checkbox mdl-checkbox is-upgraded ng-untouched ng-pristine ng-valid" ng-reflect-model="false" ng-reflect-ripple-active="true">
+	<input class="mdl-checkbox__input ng-untouched ng-pristine ng-valid" type="checkbox" ng-reflect-is-disabled="false">
+	<span class="mdl-checkbox__label"></span>
+	<span class="mdl-checkbox__focus-helper"></span>
+	<span class="mdl-checkbox__box-outline">
+		<span class="mdl-checkbox__tick-outline"></span>
+	</span>
+	<span class="mdl-checkbox__ripple-container mdl-ripple--center"><span class="mdl-ripple"></span></span></mdl-checkbox></mdl-card-menu></span>    <mdl-card-supporting-text class="mdl-card__supporting-text"><div class="inv-card__inner__back"><div class="inv-card__tail__table"><!--bindings={
+	"ng-reflect-ng-for-of": "[object Object],[object Object"
+	}--><div class="inv-card__row"><div class="inv-device__cell1--border ux-subheader">Missing 2critical patches </div><div ng-reflect-ng-switch=""><!--bindings={
+	"ng-reflect-ng-switch-case": "Error"
+	}--><!--bindings={
+	"ng-reflect-ng-switch-case": "Warning"
+	}--><!--bindings={
+	"ng-reflect-ng-switch-case": "Info"
+	}--></div><div class="inv-device__cell3--border inv-card__cell--uppercase"><button mdl-button="" mdl-colored="" mdl-ripple="" ng-reflect-mdl-colored-type="" ng-reflect-ripple-active="" class="mdl-button">Act<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button></div></div><div class="inv-card__row"><div class="inv-device__cell1--border ux-subheader">Disk capacity exceeding 76 %</div><div ng-reflect-ng-switch=""><!--bindings={
+	"ng-reflect-ng-switch-case": "Error"
+	}--><!--bindings={
+	"ng-reflect-ng-switch-case": "Warning"
+	}--><!--bindings={
+	"ng-reflect-ng-switch-case": "Info"
+	}--></div><div class="inv-device__cell3--border inv-card__cell--uppercase"><button mdl-button="" mdl-colored="" mdl-ripple="" ng-reflect-mdl-colored-type="" ng-reflect-ripple-active="" class="mdl-button">Act<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button></div></div><div class="inv-card__row"><div class="inv-device__cell1--border ux-subheader">Warrantee due to expire in 22 days</div><div ng-reflect-ng-switch=""><!--bindings={
+	"ng-reflect-ng-switch-case": "Error"
+	}--><!--bindings={
+	"ng-reflect-ng-switch-case": "Warning"
+	}--><!--bindings={
+	"ng-reflect-ng-switch-case": "Info"
+	}--></div><div class="inv-device__cell3--border inv-card__cell--uppercase"><button mdl-button="" mdl-colored="" mdl-ripple="" ng-reflect-mdl-colored-type="" ng-reflect-ripple-active="" class="mdl-button">Act<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button></div></div></div></div>	</mdl-card-supporting-text><mdl-card-actions class="mdl-card__actions__back mdl-card__actions mdl-card--border" mdl-card-border=""><!--bindings={
+	"ng-reflect-ng-for-of": "[object Object]"
+	}--><span><button mdl-button="" mdl-colored="" mdl-ripple="" ng-reflect-mdl-colored-type="" ng-reflect-ripple-active="" class="mdl-button">LINK<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button></span><div class="inv-card__button--flip inv-card__tail--fold" id="inv-card-flip-back0"><div class="inv-card--fold__legend"><i class="material-icons">flip_to_front</i></div></div></mdl-card-actions></mdl-card>
+							</div>
+						</div>
+
+
+
+
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+                    	Tile Space
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+
+<div class="flip-container" [ngClass]="{'flipped': flipElem}" style="height:100%;width:100%;">
+	<div class="flipper" style="height:100%;">
+		<div class="front" style="border:1px solid silver;background:#ebebeb;height:100%;width:100%;">
+			<!-- front content -->
+			Front side
+			<button class="mdl-button" (click)="flipElem = !flipElem;">Flip This Card</button>
+		</div>
+		<div class="back" style="border:1px solid silver;background:#ccc;height:100%;width:100%;">
+			<!-- back content -->
+			Back side si senor
+			<button class="mdl-button" (click)="flipElem = !flipElem;">Flip This Card</button>
+		</div>
+	</div>
+</div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+
+
+
+
+
+
+						<div class="flip-container" [ngClass]="{'': !flipElem,'flipped animated flipInY': flipElem}">
+							<div class="flipper">
+								<!-- Front Side -->
+								<div class="front">
+									<mdl-card class="mdl-card__head mdl-shadow--2dp">
+							            <mdl-card-title class="mdl-card__title">
+							                <span class="md-title">
+							                    <span id="inv-card{{tileIndex}}-title">Title</span>
+							                </span>
+							                 <span>
+								                <mdl-card-menu>
+								                    <mdl-checkbox id="inv-card{{tileIndex}}-checkbox" [mdl-ripple]="true"
+								                    (click)="clickAction($event, tileData?.topCheckbox?.clickData, 
+								                        tileData.topCheckbox.isChecked)" class="inv-card__checkbox">
+								                    </mdl-checkbox>
+								                </mdl-card-menu>
+								            </span>   
+							            </mdl-card-title>
+							            <div class="ux-icon-set"><div class="mdl-card__first__icon"><i class="material-icons">tablet_android</i></div><div class="mdl-card__second__icon"><i class="fa fa-android "></i></div></div>
+							            <mdl-card-supporting-text class="mdl-card__supporting-text"><div class="inv-card__inner__center"><span class="ux-display-2 inv-card-left__text">5</span>  <span class="inv-card-right__text"><strong class="ux-title">Days Ago</strong><em class="ux-caemtion">last seen</em>  </span></div>              </mdl-card-supporting-text>
+							            <mdl-card-actions mdl-card-border="" class="mdl-card__actions mdl-card--border"><!--bindings={
+											  "ng-reflect-ng-if": "true"
+											}--><span><!--bindings={
+											  "ng-reflect-ng-for-of": "[object Object]"
+											}--><span><button mdl-button="" mdl-colored="" mdl-ripple="" ng-reflect-mdl-colored-type="" ng-reflect-ripple-active="" class="mdl-button">LINK<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>                   </span></span><!--bindings={
+											  "ng-reflect-ng-if": "false"
+											}-->
+											<div class="inv-card__button--flip inv-card__head--fold" id="inv-card-flip-front0">
+												<div class="inv-card--fold__legend" (click)="flipElem = !flipElem;"><i class="material-icons">flip_to_back</i></div>
+											</div>
+										</mdl-card-actions>
+							        </mdl-card>
+
+
+
+
+								</div>
+								<!-- Back Side -->
+								<div class="back">
+
+
+
+									<mdl-card class="mdl-card__head mdl-shadow--2dp">
+							            <mdl-card-title class="mdl-card__title">
+							                <span class="md-title">
+							                    <span id="inv-card{{tileIndex}}-title">Backside</span>
+							                </span>
+							                 <span>
+								                <mdl-card-menu>
+								                    <mdl-checkbox id="inv-card{{tileIndex}}-checkbox" [mdl-ripple]="true"
+								                    (click)="clickAction($event, tileData?.topCheckbox?.clickData, 
+								                        tileData.topCheckbox.isChecked)" class="inv-card__checkbox">
+								                    </mdl-checkbox>
+								                </mdl-card-menu>
+								            </span>   
+							            </mdl-card-title>
+							            <div class="ux-icon-set"><div class="mdl-card__first__icon"><i class="material-icons">tablet_android</i></div><div class="mdl-card__second__icon"><i class="fa fa-android "></i></div></div>
+							            <mdl-card-supporting-text class="mdl-card__supporting-text"><div class="inv-card__inner__center"><span class="ux-display-2 inv-card-left__text">5</span>  <span class="inv-card-right__text"><strong class="ux-title">Days Ago</strong><em class="ux-caemtion">last seen</em>  </span></div>              </mdl-card-supporting-text>
+							            <mdl-card-actions mdl-card-border="" class="mdl-card__actions mdl-card--border"><!--bindings={
+											  "ng-reflect-ng-if": "true"
+											}--><span><!--bindings={
+											  "ng-reflect-ng-for-of": "[object Object]"
+											}--><span><button mdl-button="" mdl-colored="" mdl-ripple="" ng-reflect-mdl-colored-type="" ng-reflect-ripple-active="" class="mdl-button">LINK<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>                   </span></span><!--bindings={
+											  "ng-reflect-ng-if": "false"
+											}-->
+											<div class="inv-card__button--flip inv-card__head--fold" id="inv-card-flip-front0">
+												<div class="inv-card--fold__legend" (click)="flipElem = !flipElem;"><i class="material-icons">flip_to_back</i></div>
+											</div>
+										</mdl-card-actions>
+							        </mdl-card>
+
+
+
+
+								</div>
+							</div>
+						</div>
+
+
+                    </div>
+                </div>  

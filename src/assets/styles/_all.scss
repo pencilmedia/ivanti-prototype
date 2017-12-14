@@ -11,10 +11,20 @@
 // Animation
 @import "common/animation";
 
-// Global/Common
-@import "common/utility";
-@import "common/common";
+// Utility
+@import "utility";
+
+// Common
+@import "common/alerts";
+@import "common/buttons";
+@import "common/dialogs";
+@import "common/filters";
+@import "common/grid";
+@import "common/icons";
+@import "common/tabs";
+@import "common/tables";
+@import "common/toolbar";
 
 // Page Layout
-@import "common/layout";
-@import "common/navigation";
+@import "layout";
+@import "navigation";
