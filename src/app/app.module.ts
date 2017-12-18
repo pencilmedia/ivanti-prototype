@@ -10,6 +10,11 @@ import { MatIconModule, MatSidenavModule, MatToolbarModule, MatTabsModule, MatSe
 // Include gesture support
 import 'hammerjs';
 
+// Components
+import { mainToolbar } from './components/main-toolbar/main-toolbar.component';
+import { mainNav } from './components/main-nav/main-nav.component';
+import { protoCard } from './components/card/card.component';
+
 // Pages
 import { protoHome } from './pages/home/home.component';
 import { protoStyleguide } from './pages/styleguide/styleguide.component';
@@ -41,6 +46,11 @@ import { routing } from './app.routes';
   ],
   declarations: [
     AppComponent,
+
+    // Components
+    mainToolbar,
+    mainNav,
+    protoCard,
 
     // Routes (Pages)
     protoHome,
