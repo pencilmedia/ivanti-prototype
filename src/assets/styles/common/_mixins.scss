@@ -99,3 +99,12 @@
 		background: lighten($hex-static-900, 50%);
    }
 }
+
+// Icons
+// Mixin - Default is 24px
+@mixin md-icon-size($size: 16px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+    line-height: $size;
+}

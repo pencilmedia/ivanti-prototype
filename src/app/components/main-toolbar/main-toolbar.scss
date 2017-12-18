@@ -1,59 +1,8 @@
-/* BEGIN: card.scss
+/* BEGIN: main-toolbar.scss
 // -----------------------------------------------------*/
 /* Import Base Component Styles */
 @import "~styles.scss";
 
-.ux-card {
-    font-family: $ux_main_font;
-    display: inline-block;
-    min-width: 250px;
-    border-top: 5px solid $static-700;
-    border-radius: $border-radius;
-    .ux-card-content {
-        font-size: 1rem;
-        width: 100%;
-        color: $static-900;
-        .ux-card-title
-        {
-            @extend h2.ux-subheader;
-        }
-        .ux-card-timeframe
-        {
-            width: 40%;
-            padding-top: 7px;
-
-            text-align: center;
-        }
-        .ux-card-device-list
-        {
-            margin: 0 0 0 10px;
-            dd
-            {
-                line-height: 24px;
-
-                margin-left: 0;
-                padding: 4px 0;
-
-                @extend .ux-truncate;
-                .material-icons
-                {
-                    float: left;
-
-                    margin-right: 10px;
-
-                    color: lighten($hex-static-900, 20%);
-                }
-            }
-        }
-    }
-    .ux-card-actions {
-        border-top: 1px solid $border-color;
-        .ux-button {
-            padding: 8px 16px;
-        }
-        .ux-button__flip {
-            position: absolute;
-            right: 10px;
-        }
-    }
+.mat-toolbar-row, .mat-toolbar-single-row {background: red;
+    height: 45px;
 }

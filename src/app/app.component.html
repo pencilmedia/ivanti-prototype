@@ -4,7 +4,36 @@
     <main-nav></main-nav>
   </mat-sidenav>
   <!-- Component: Main Toolbar -->
-  <main-toolbar></main-toolbar>
+  <mat-toolbar class="mat-elevation-z2 ux-main-toolbar">
+    <span class="btn-drawer">
+      <button mat-icon-button (click)="appNavigation.open()">
+        <i class="material-icons">menu</i>
+      </button>
+    </span>
+    <span class="ux-layout__header__search">
+      <!-- This fills the remaining space of the current row -->
+      <span class="ux-flexbox flex-row ux-field-group">
+        <span class="ux-flex ux-field-group--field">
+          <input type="search" placeholder="Search" autocomplete="name" class="ux-search-field" />
+        </span>
+        <span class="ux-field-group--action">
+          <button mat-button>
+            <mat-icon class="md-20" aria-label="Explain this icon">search</mat-icon>
+          </button>
+        </span>
+      </span>
+    </span>
+    <!-- Toolbar Actions -->
+    <button mat-icon-button color="accent" class="ux-icon-button">
+      <mat-icon class="md-20" aria-label="Explain this icon">mode_comment</mat-icon>
+    </button>
+    <button mat-icon-button color="accent" class="ux-icon-button">
+      <mat-icon class="md-20" aria-label="Explain this icon">notifications</mat-icon>
+    </button>
+    <button mat-icon-button color="accent" class="ux-icon-button">
+      <mat-icon class="md-20" aria-label="Explain this icon">settings</mat-icon>
+    </button>
+  </mat-toolbar>
   <main class="ux-prototype ux-layout__content">
     <!-- Router Outlet -->
     <router-outlet></router-outlet>

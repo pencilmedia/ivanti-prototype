@@ -1,13 +1,8 @@
 /* BEGIN: app.component.scss
 // -----------------------------------------------------*/
 
-/* Web Fonts */
-/* ////////////////// */
-@import "~assets/styles/web-fonts/_web-fonts";
-
-/* Custom Color Palette */
-/* ////////////////// */
-@import "~assets/styles/themes";
+/* Import Base Component Styles */
+@import "~styles.scss";
 
 .ux-prototype {
     padding: 20px;
