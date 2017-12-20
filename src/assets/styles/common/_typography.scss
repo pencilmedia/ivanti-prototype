@@ -94,6 +94,9 @@ p {
 	font-weight: 600;
 	line-height: 22px;
 }
+.ux-support-text {
+	color: $static-500;
+}
  /* Icons */
 .material-icons {
 	@include typo-icon;

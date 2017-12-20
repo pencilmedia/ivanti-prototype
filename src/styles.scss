@@ -12,6 +12,10 @@
 /* ////////////////// */
 @import "~assets/styles/themes";
 
+/* Plug-in Styles */
+/* ////////////////// */
+@import 'node_modules/@material/layout-grid/mdc-layout-grid';
+
 /* Global Styles */
 /* ////////////////// */
 @import '~assets/styles/all';

@@ -3,12 +3,65 @@
 /* Import Base Component Styles */
 @import "~styles.scss";
 
+.ux-alert-box {
+	color: darken($hex-status-high, 20%);
+	border: 1px solid $status-high;
+	background: lighten($hex-status-high, 55%);
+	padding: $spacing-10 $spacing-20;
+	box-shadow: 0 0 3px $shadow-color;
+	border-radius: 0 10px 0 10px;
+	h1 {
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	&.info {
+		color: darken($hex-accent-500, 10%);
+		border: 1px solid $accent-500;
+		background: lighten($hex-accent-500, 60%);
+	}
+}
+
 // Color Palettes
 .palette-swatch {
 	display: block;
 	width: 100%;
 	height: 25px;
 	text-align: center;
+}
+// Static
+.static-900 {
+	background: $static-900;
+	color: $dark-contrast;
+}
+.static-800 {
+	background: $static-800;
+	color: $dark-contrast;
+}
+.static-700 {
+	background: $static-700;
+	color: $dark-contrast;
+}
+.static-600 {
+	background: $static-600;
+	color: $dark-contrast;
+}
+.static-500 {
+	background: $static-500;
+}
+.static-400 {
+	background: $static-400;
+}
+.static-300 {
+	background: $static-300;
+}
+.static-200 {
+	background: $static-200;
+}
+.static-100 {
+	background: $static-100;
+}
+.static-50 {
+	background: $static-50;
 }
 // Primary
 .primary-900 {

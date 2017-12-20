@@ -1,12 +1,93 @@
 <h3 class="ux-headline">Pages: Icons &amp; Components</h3>
 <div class="page-content">
-	<mat-tab-group [selectedIndex]="0">
-		<mat-tab label="Color Palette">
-			<!-- // Color Scheme -->
-			<h2 class="ux-headline">Uno Static Color Scheme</h2>
+	<mat-tab-group [selectedIndex]="1">
+		<mat-tab label="Typography">
 			<div class="mdc-layout-grid ux-grid">
 				<div class="mdc-layout-grid__inner">
-					<div class="mdc-layout-grid__cell">
+					<div class="mdc-layout-grid__cell--span-12">
+						<h2 class="ux-headline">Typography</h2>
+					</div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid ux-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-6">
+				
+						<h3 class="ux-headline">Headline</h3>
+						<p class="ux-caption">Open Sans, font-weight:400, 24px</p>
+				
+						<h4 class="ux-title">Title</h4>
+						<p class="ux-caption">Open Sans, font-weight:600, 18px</p>
+				
+						<h5 class="ux-subheader">Subheader</h5>
+						<p class="ux-caption">Open Sans, font-weight:400, 14px</p>
+				
+						<p class="sg-no-bottom-space">Body1 Text</p>
+						<p class="ux-caption">Open Sans, font-weight:400, 14px</p>
+				
+						<p class="ux-body-2 sg-no-bottom-space">Body2 Text</p>
+						<p class="ux-caption">Open Sans, font-weight:600, 15px</p>
+				
+						<p class="ux-caption sg-no-bottom-space">Caption Text</p>
+						<p class="ux-caption">Open Sans, font-weight:400, 12px</p>
+				
+						<p class="ux-caption2 sg-no-bottom-space">Caption2 Text</p>
+						<p class="ux-caption">Open Sans, font-weight:600, 12px</p>
+				
+						<p class="ux-caption2 sg-no-bottom-space"><button mat-button class="ux-button" color="primary">Button Text</button></p>
+						<p class="ux-caption">Open Sans, font-weight:400, 13px</p>
+					</div>
+					<div class="mdc-layout-grid__cell--span-6">
+
+						<h1 class="display-4">Display 4</h1>
+						<p class="ux-caption ux-support-text">Open Sans, font-weight:300, 80px</p>
+				
+						<h2 class="display-3">Display 3</h2>
+						<p class="ux-caption">Open Sans, font-weight:400, 50px</p>
+				
+						<h3 class="display-2">Display 2</h3>
+						<p class="ux-caption">Open Sans, font-weight:400, 45px</p>
+				
+						<h4 class="display-1">Display 1</h4>
+						<p class="ux-caption">Open Sans font-weight:400, 34px</p>
+					</div>
+				</div>
+			</div>
+		</mat-tab>
+		<mat-tab label="Color Palette">
+			<div class="mdc-layout-grid ux-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-12">
+						<h2 class="ux-headline">CDL Color Scheme</h2>
+						<p>All colors are RGBa value; prepend &quot;hex-&quot; to convert to hex color values. i.e. .static-500 becomes .hex-static-500 or .primary-900 becomes .hex-primary-900</p>
+						<div class="ux-alert-box info">
+							<h1>To Do</h1>
+							<ul>
+								<li>Change the static color palette to more basic; need grey range; blue range</li>
+								<li>Add utilities class="scss" and Variables.scss page; listing padding, margin, spacing etc...</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid ux-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-3">
+						<!-- // Static Color Scheme -->
+						<h1 class="ux-title">Static Color</h1>
+						<div class="palette-swatch static-900">static-900</div>
+						<div class="palette-swatch static-800">static-800</div>
+						<div class="palette-swatch static-700">static-700</div>
+						<div class="palette-swatch static-600">static-600</div>
+						<div class="palette-swatch static-500">static-500</div>
+						<div class="palette-swatch static-400">static-400</div>
+						<div class="palette-swatch static-300">static-300</div>
+						<div class="palette-swatch static-200">static-200</div>
+						<div class="palette-swatch static-100">static-100</div>
+						<div class="palette-swatch static-50">static-50</div>
+					</div>
+					<div class="mdc-layout-grid__cell--span-3">
+						<!-- // CDL Color Scheme -->
 						<h1 class="ux-title">Primary Color</h1>
 						<div class="palette-swatch primary-900">primary-900</div>
 						<div class="palette-swatch primary-800">primary-800</div>
@@ -19,15 +100,17 @@
 						<div class="palette-swatch primary-100">primary-100</div>
 						<div class="palette-swatch primary-50">primary-50</div>
 					</div>
-					<div class="mdc-layout-grid__cell">
-							<h1 class="ux-title">Accent Color</h1>
-							<div class="palette-swatch accent-500">accent-500</div>
-							<div class="palette-swatch accent-400">accent-400</div>
-							<div class="palette-swatch accent-300">accent-300</div>
-							<div class="palette-swatch accent-200">accent-200</div>
-							<p><em>NOTE:</em> Accent colors begin 500 and end 200;<br> not using 900-50</p>
-						</div>
-					<div class="mdc-layout-grid__cell">
+					<div class="mdc-layout-grid__cell--span-3">
+						<h1 class="ux-title">Accent Color</h1>
+						<div class="palette-swatch accent-500">accent-500</div>
+						<div class="palette-swatch accent-400">accent-400</div>
+						<div class="palette-swatch accent-300">accent-300</div>
+						<div class="palette-swatch accent-200">accent-200</div>
+						<p>
+							<em>NOTE:</em> Accent colors begin 500 and end 200;
+							<br> not using 900-50</p>
+					</div>
+					<div class="mdc-layout-grid__cell--span-3">
 						<h1 class="ux-title">Status Color</h1>
 						<div class="palette-swatch status-high">status-high</div>
 						<div class="palette-swatch status-medium">status-medium</div>
@@ -35,27 +118,150 @@
 					</div>
 				</div>
 			</div>
-			<!-- // Buttons -->
-			<h2 class="ux-headline">Uno Buttons</h2>
+
+		</mat-tab>
+		<mat-tab label="MDC Grid">
 			<div class="mdc-layout-grid ux-grid">
 				<div class="mdc-layout-grid__inner">
-					<div class="mdc-layout-grid__cell">		
-						<p>
-							<button mat-button class="ux-button">Default Button</button>
-							<button mat-raised-button class="ux-button--raised">Raised Button</button>
-							<button mat-icon-button class="ux-button--icon"><mat-icon>search</mat-icon></button>
-						</p>
+					<div class="mdc-layout-grid__cell--span-12">
+						<h2 class="ux-headline">MDC Grid Layout</h2>
 					</div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-6" style="border:1px solid silver">aa</div>
+					<div class="mdc-layout-grid__cell--span-6" style="border:1px solid silver">bb</div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid ux-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-12">
+						<h2 class="ux-headline">MDC Grid Layout - Nested</h2>
+					</div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-12" style="border:1px solid silver">
+						First level
+					</div>
+					<div class="mdc-layout-grid__cell">
+						<div class="mdc-layout-grid__inner">
+							<div class="mdc-layout-grid__cell" style="border:1px solid silver">
+								<span>Second level</span>
+							</div>
+							<div class="mdc-layout-grid__cell" style="border:1px solid silver">
+								<span>Second level</span>
+							</div>
+						</div>
+					</div>
+					<div class="mdc-layout-grid__cell" style="border:1px solid silver">First level</div>
+					<div class="mdc-layout-grid__cell" style="border:1px solid silver">First level</div>
 				</div>
 			</div>
 		</mat-tab>
 		<mat-tab label="Components">
-			<h3>Uno Buttons</h3>
-			<p>
-				<button mat-button class="ux-button">Default Button</button>
-				<button mat-raised-button class="ux-button--raised">Raised Button</button>
-				<button mat-icon-button class="ux-button--icon"><mat-icon>search</mat-icon></button>
-			</p>
+			<!-- // Buttons -->
+			<div class="mdc-layout-grid ux-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-12">
+						<h2 class="ux-headline">Buttons</h2>
+					</div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-12">
+							<h3 class="ux-subheader">Basic Buttons</h3>
+							<div class="button-row">
+								<button mat-button class="ux-button">Basic</button>
+								<button mat-button class="ux-button" color="primary">Primary</button>
+								<button mat-button class="ux-button" color="accent">Accent</button>
+								<button mat-button class="ux-button" color="warn">Warn</button>
+								<button mat-button class="ux-button" disabled>Disabled</button>
+								<a mat-button class="ux-button" routerLink=".">Link</a>
+							</div>
+						
+							<h3 class="ux-subheader">Raised Buttons</h3>
+							<div class="button-row">
+								<button mat-raised-button class="ux-raised-button">Basic</button>
+								<button mat-raised-button class="ux-raised-button" color="primary">Primary</button>
+								<button mat-raised-button class="ux-raised-button" color="accent">Accent</button>
+								<button mat-raised-button class="ux-raised-button" color="warn">Warn</button>
+								<button mat-raised-button class="ux-raised-button" disabled>Disabled</button>
+								<a mat-raised-button class="ux-raised-button" routerLink=".">Link</a>
+							</div>
+						
+							<h3 class="ux-subheader">Icon Buttons</h3>
+							<div class="button-row">
+								<button mat-icon-button class="ux-icon-button">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-icon-button class="ux-icon-button" color="primary">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-icon-button class="ux-icon-button" color="accent">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-icon-button class="ux-icon-button" color="warn">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-icon-button class="ux-icon-button" disabled>
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+							</div>
+						
+							<h3 class="ux-subheader">Fab Buttons</h3>
+							<div class="button-row">
+								<button mat-fab class="ux-fab">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-fab class="ux-fab" color="primary">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-fab class="ux-fab" color="accent">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-fab class="ux-fab" color="warn">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-fab class="ux-fab" disabled>
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-fab class="ux-fab">
+								<mat-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<a md-fab class="ux-fab" routerLink=".">Link</a>
+							</div>
+						
+							<h3 class="ux-subheader">Mini Fab Buttons</h3>
+							<div class="button-row">
+								<button mat-mini-fab class="ux-mini-fab">
+								<mat-icon class="md-18" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-mini-fab class="ux-mini-fab" color="primary">
+								<mat-icon class="md-18" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-mini-fab class="ux-mini-fab" color="accent">
+								<mat-icon class="md-18" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-mini-fab class="ux-mini-fab" color="warn">
+								<mat-icon class="md-18" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-mini-fab class="ux-mini-fab" disabled>
+								<mat-icon class="md-18" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<button mat-mini-fab class="ux-mini-fab">
+								<mat-icon class="md-18" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+								</button>
+								<a mat-mini-fab class="ux-mini-fab" routerLink=".">
+								<mat-icon class="md-18" aria-label="Example icon-button with a share icon">share</mat-icon>
+								</a>
+							</div>
+					</div>
+				</div>
+			</div>
 		</mat-tab>
 	</mat-tab-group>
 </div>
