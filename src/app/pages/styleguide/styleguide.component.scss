@@ -9,15 +9,14 @@
 	background: lighten($hex-status-high, 55%);
 	padding: $spacing-10 $spacing-20;
 	box-shadow: 0 0 3px $shadow-color;
-	border-radius: 0 10px 0 10px;
 	h1 {
 		font-size: 16px;
 		text-transform: uppercase;
 	}
 	&.info {
-		color: darken($hex-accent-500, 10%);
+		color: $hex-accent-500;
 		border: 1px solid $accent-500;
-		background: lighten($hex-accent-500, 60%);
+		background: $hex-accent-200;
 	}
 }
 
@@ -98,7 +97,7 @@
 .primary-50 {
 	background: $primary-50;
 }
-// Accent
+// Accent - RGBa
 .accent-500 {
 	background: $accent-500;
 	color: $dark-contrast;
@@ -112,6 +111,23 @@
 }
 .accent-200 {
 	background: $accent-200;
+}
+// Accent - hex
+
+// Accent
+.hex-accent-500 {
+	background: $hex-accent-500;
+	color: $dark-contrast;
+}
+.hex-accent-400 {
+	background: $hex-accent-400;
+	color: $dark-contrast;
+}
+.hex-accent-300 {
+	background: $hex-accent-300;
+}
+.hex-accent-200 {
+	background: $hex-accent-200;
 }
 // Status
 .status-high {
