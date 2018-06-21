@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
-`npm install`
+`npm install`  
 `ng serve`
 
 ## Development server
